@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-areas: 
+            'head head head'
+            'nav nav nav'
+            'section section aside'
+            'article article aside'
+            'footer footer footer'
+            ;
+            background-color: gainsboro;
+        }
+        #head{
+            grid-area: head;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 5px;
+        }
+        #nav{
+            grid-area: nav;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 25px;
+            margin: 5px;
+        }
+        #section{
+            grid-area: section;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 5px;
+        }
+        #article{
+            grid-area: article;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 5px;
+        }
+        #aside{
+            grid-area: aside;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        #footer{
+            grid-area: footer;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header id="head">Header</header>
+        <nav id="nav">Nav</nav>
+        <section id="section">Section</section>
+        <article id="article">Article</article>
+        <aside id="aside">Aside</aside>
+        <footer id="footer">Footer</footer>
+    </div>
+</body>
+</html>
